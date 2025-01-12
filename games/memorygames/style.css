@@ -1,0 +1,114 @@
+body {  
+    font-family: Arial, sans-serif;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+    background-color: #f0f0f0;  
+}  
+  
+.container {  
+    background-color: #fff;  
+    padding: 20px;  
+    border-radius: 16px; /* Lengkungan di setiap sudut */  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+    width: 100%;  
+    max-width: 400px;  
+}  
+  
+.header {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    margin-bottom: 20px;  
+}  
+  
+.header h1 {  
+    margin: 0;  
+}  
+  
+.statusText {  
+    font-size: 1.5em;  
+    margin-bottom: 20px;  
+    color: #333;  
+}  
+  
+.grid {  
+    display: grid;  
+    grid-template-columns: repeat(3, 100px);  
+    grid-template-rows: repeat(4, 100px);  
+    gap: 10px;  
+    justify-content: center;  
+    align-items: center;  
+    margin: 0 auto;  
+}  
+  
+.card {  
+    width: 100px;  
+    height: 100px;  
+    background-color: #ddd;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    font-size: 2em;  
+    cursor: pointer;  
+    transition: background-color 0.2s, transform 0.2s;  
+    border: 2px solid #ccc;  
+    border-radius: 8px;  
+    position: relative;  
+    background-image: url('../../assets/images/memory_card_back.png');  
+    background-size: cover;  
+    background-position: center;  
+}  
+  
+.card.flipped {  
+    background-image: none;  
+}  
+  
+.card.match {  
+    border-color: #28a745; /* Hijau untuk kartu match */  
+}  
+  
+.card.no-match {  
+    border-color: #dc3545; /* Merah untuk kartu tidak match */  
+}  
+  
+.card img {  
+    width: 80px;  
+    height: 80px;  
+    max-width: 100%;  
+    max-height: 100%;  
+    object-fit: contain;  
+}  
+  
+.button-container {  
+    display: flex;  
+    justify-content: space-between;  
+    margin-top: 20px;  
+}  
+  
+.homeBtn, .restartBtn {  
+    padding: 10px 20px;  
+    background-color: #007bff;  
+    color: #fff;  
+    border: none;  
+    border-radius: 24px; /* Bentuk bulat */  
+    cursor: pointer;  
+    font-size: 1em;  
+    transition: background-color 0.2s, transform 0.2s;  
+}  
+  
+.homeBtn:hover, .restartBtn:hover {  
+    background-color: #0056b3;  
+    transform: scale(1.05);  
+}  
+  
+.restartBtn {  
+    background-color: #28a745;  
+}  
+  
+.restartBtn:hover {  
+    background-color: #218838;  
+}  
