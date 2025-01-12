@@ -1,0 +1,73 @@
+body {  
+    font-family: Arial, sans-serif;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+    background-color: #f0f0f0;  
+}  
+  
+.container {  
+    background-color: #fff;  
+    padding: 20px;  
+    border-radius: 16px; /* Lengkungan di setiap sudut */  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+    width: 100%;  
+    max-width: 400px;  
+}  
+  
+h1 {  
+    margin-bottom: 20px;  
+    color: #333;  
+}  
+  
+.game-grid {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */  
+    gap: 10px;  
+}  
+  
+.game-item {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    text-align: center;  
+}  
+  
+.game-frame {  
+    width: 100px; /* Ukuran kotak */  
+    height: 100px; /* Ukuran kotak */  
+    border: 2px solid #ccc; /* Garis lurus untuk menunjukkan frame kosong */  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    margin-bottom: 10px;  
+    transition: transform 0.2s;  
+    border-radius: 8px; /* Lengkungan di setiap sudut */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */  
+}  
+  
+.game-frame:hover {  
+    transform: scale(1.1);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */  
+}  
+  
+.game-logo {  
+    width: 80px; /* Ukuran logo */  
+    height: 80px; /* Ukuran logo */  
+    max-width: 100%;  
+    max-height: 100%;  
+    object-fit: contain;  
+}  
+  
+a {  
+    text-decoration: none;  
+    color: #007bff;  
+    font-weight: bold;  
+}  
+  
+a:hover {  
+    text-decoration: underline;  
+}  
